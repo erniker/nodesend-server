@@ -9,7 +9,7 @@ dbConnect()
 
 // Habilitar el Cors
 const corsOption = {
-  origin: 'https://nodesend-client-49xq59tea-erniker.vercel.app',
+  origin: 'https://nodesend-client-alpha.vercel.app',
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 }
