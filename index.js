@@ -10,6 +10,8 @@ dbConnect()
 // Habilitar Cors
 const corsOption = {
   origin: process.env.FRONTEND_URL,
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
 }
 app.use(cors(corsOption))
 
