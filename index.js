@@ -9,14 +9,15 @@ dbConnect()
 
 // Habilitar el Cors
 const corsOption = {
-  origin: 'https://nodesend-client-alpha.vercel.app',
+  origin:
+    process.env.FRONTEND_URL || 'https://nodesend-client-alpha.vercel.app',
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 }
 app.use(cors(corsOption))
 
 // Puerto de la app
-const port = process.env.Port || 4000
+const port = process.env.PORT || 4000
 
 // Habilitar leer valores de un body
 app.use(express.json())
