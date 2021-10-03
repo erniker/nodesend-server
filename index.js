@@ -7,7 +7,7 @@ const app = express()
 // Conectar a la DB
 dbConnect()
 
-// Habilitar Cors
+// Habilitar el Cors
 const corsOption = {
   origin: 'https://nodesend-client-alpha.vercel.app',
   credentials: true, //access-control-allow-credentials:true
